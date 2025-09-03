@@ -4,7 +4,7 @@ using namespace std;
 // Minimum coins to make sum
 int minCoins(vector<int>& coins, int amount) {
     const int INF=1e9;
-    vector<int> dp(amount+1, INF);
+    vector<int> dp(amount+1, INF); //vector<Type> name(size, initial_value)
     dp[0]=0;
     for(int coin: coins){
         for(int i=coin;i<=amount;i++){
